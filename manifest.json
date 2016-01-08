@@ -1,0 +1,16 @@
+{
+  "name": "angular-redmine-tracker",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "angular simple tracker does exactly what I want with some
+   sily mistakes I will fix them on it",
+   "app": {
+     "launch": {
+        "web_url" :"https://www.google.com.br/",
+        "container": "panel"
+      }
+   },
+   "permissions": [
+     "notifications"
+   ]
+}
