@@ -1,0 +1,8 @@
+{
+  "name": "redmine tron",
+  "version": "0.0.1",
+  "author": "David Willian",
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}

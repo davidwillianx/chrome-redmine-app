@@ -5,12 +5,17 @@
   "description": "angular simple tracker does exactly what I want with some
    sily mistakes I will fix them on it",
    "app": {
-     "launch": {
-        "web_url" :"https://www.google.com.br/",
-        "container": "panel"
-      }
+     "background": {
+       "scripts": [
+         "app/src/js/bootstrap/main.js"
+       ]
+     }
    },
    "permissions": [
-     "notifications"
+     "notifications",
+     "storage",
+     "alarms",
+     "http://*/*",
+     "https://*/*"
    ]
 }
