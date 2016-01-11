@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="redminetraker">
   <head>
     <meta charset="utf-8">
-    <title>my fucking awesome app</title>
+    <title>redtimetracker</title>
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css"
+      media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    lets to something pretty awesome
+    <div class="" ui-view>
+    </div>
   </body>
+  <script src="vendors/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="vendors/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+
+  <script src="vendors/angular/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-resource/angular-resource.min.js" charset="utf-8"></script>
+
+  <!-- main app  -->
+  <script src="js/app.js" charset="utf-8"></script>
+
+  <!-- core app -->
+  <script src="js/core/core.module.js" charset="utf-8"></script>
+  <script src="js/core/bootstrap/router.main.js" charset="utf-8"></script>
+
+  <!-- data provider -->
+  <script src="js/data/dataprovider.js" charset="utf-8"></script>
+  <script src="js/data/user.js" charset="utf-8"></script>
+
+  <!-- access module  -->
+  <script src="js/access/access.module.js" charset="utf-8"></script>
+  <script src="js/access/access.controller.js" charset="utf-8"></script>
 </html>
