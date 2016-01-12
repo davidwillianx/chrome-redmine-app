@@ -2,16 +2,15 @@
  angular.module('redminetraker.access')
  .controller('Access', Access);
 
- Access.$inject = ['$scope', 'User'];
+ Access.$inject = ['$scope', '$state', 'User'];
 
- function Access($scope, User){
+ function Access($scope, $state, User){
    access = this;
-   access.name = 'bogloblo';
    access.signin = signin;
 
    function signin(user) {
      User.login(user).then(function (data) {
-       console.log(data);
+       $state.go('');
      });
    }
  }

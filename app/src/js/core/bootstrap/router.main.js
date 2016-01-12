@@ -10,6 +10,11 @@
         url: '',
         templateUrl: 'js/access/index.html',
         controller: 'Access as access'
+      })
+      .state('dash',{
+        url: '/dash',
+        templateUrl: 'js/dash/index.html',
+        controller: 'Dash as dash'
       });
 
       $urlRouterProvider.otherwise('access');
