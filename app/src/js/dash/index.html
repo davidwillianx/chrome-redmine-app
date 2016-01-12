@@ -1,0 +1,20 @@
+<div class="">
+  <table>
+    <thead>
+      <tr>
+        <th>-</th>
+        <th>desc</th>
+        <th>start</th>
+        <th>stop</th>
+      <th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="issue in dash.issues">
+        <td>{{issue.id}}</td>
+        <td>{{issue.subject}}</td>
+        <td><a ng-click="dash.start()">start</a></td>
+        <td><a ng-click="dash.stop()">stop</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

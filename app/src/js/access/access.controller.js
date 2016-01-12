@@ -10,7 +10,7 @@
 
    function signin(user) {
      User.login(user).then(function (data) {
-       $state.go('');
+       $state.go('dash');
      });
    }
  }

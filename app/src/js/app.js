@@ -2,7 +2,8 @@
   angular.module('redminetraker', [
     'redminetraker.core',
     'redminetraker.dataProvider',
-    'redminetraker.access'
+    'redminetraker.access',
+    'redminetraker.dash'
   ], clearDecoratorHistoryProvider);
 
    function clearDecoratorHistoryProvider($provide) {
