@@ -14,7 +14,7 @@
       .state('dash',{
         url: '/dash',
         templateUrl: 'js/dash/index.html',
-        controller: 'Dash as dash'
+        controller: 'Dash as vm'
       });
 
       $urlRouterProvider.otherwise('access');

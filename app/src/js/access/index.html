@@ -1,9 +1,19 @@
-<div class="">
-  {{access.name}}
-
-  <form class="" novalidate>
-    <input type="text" name="username" ng-model="user.username">
-    <input type="password" name="password" ng-model="user.password">
-    <input type="button" value="Acessar!" ng-click="access.signin(user)">
-  </form>
+<div class="container">
+	<div class="row">
+	  <form  class="col s12" novalidate>
+		  <div class="row">
+			  <div class="input-field col s10">
+				  <input type="text" name="username" id="username"
+				 ng-model="user.username" placeholder="me informe seu login"/>
+				  <label for="username">Login</label>
+			  </div>
+			  <div class="input-field col s10">
+				  <input type="password" name="password" id="password" 
+				 ng-model="user.password"  placeholder="me informe sua senha" />
+				  <label for="password">Senha</label>
+			  </div>
+		  </div> 
+	    <input type="button" class="waves-effect btn"  value="Acessar!" ng-click="access.signin(user)">
+	  </form>
+	</div>
 </div>

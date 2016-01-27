@@ -1,25 +1,34 @@
-(function(){ angular.module('redminetraker.dash')
+(function(){
+  'use strict';
+
+  angular.module('redminetraker.dash')
  .controller('Dash', Dash)
 
  Dash.$inject = ['$scope', 'Issue'];
 
  function Dash($scope, Issue){
-   var dash = this;
-   dash.title = 'nothing';
-   dash.issues = [];
-   dash.start = _startCountTimeIssue;
-   dash.stop = _stopCountTimeIssue;
+   var vm = this;
+   vm.issues = [];
+   vm.isTimeRunning = null;
+   vm.startTimer = _startCountTimeIssue;
+   vm.stopTimer = _stopCountTimeIssue;
+
+
+   console.log('this is my current scope');
+   console.log($scope);
+
 
     init();
 
     function init() {
       Issue.all().then(function (redmineResponse) {
-         dash.issues =  redmineResponse.issues;
+        vm.issues =  redmineResponse.issues;
       });
     }
 
-    function _startCountTimeIssue(){
-      console.log('starting');
+    function _startCountTimeIssue(issue){
+      vm.issue = issue;
+      $scope.$broadcast('timer-start');
     }
 
     function _stopCountTimeIssue() {
