@@ -14,10 +14,6 @@
    vm.stopTimer = _stopCountTimeIssue;
 
 
-   console.log('this is my current scope');
-   console.log($scope);
-
-
     init();
 
     function init() {
@@ -27,12 +23,13 @@
     }
 
     function _startCountTimeIssue(issue){
+	    console.log('im not the only one');
       vm.issue = issue;
       $scope.$broadcast('timer-start');
     }
 
     function _stopCountTimeIssue() {
-      console.log('stopping');
+      $scope.$broadcast('timer-stop');
     }
  }
 })();
