@@ -1,0 +1,27 @@
+{
+  "name": "chrome-redmine-app",
+  "version": "1.0.0",
+  "description": "\"application to solve time-tracker problem\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidwillianx/chrome-redmine-app.git"
+  },
+  "keywords": [
+    "chromeapp",
+    "redmine",
+    "timetracker"
+  ],
+  "author": "David Willian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidwillianx/chrome-redmine-app/issues"
+  },
+  "homepage": "https://github.com/davidwillianx/chrome-redmine-app#readme",
+  "devDependencies": {
+    "karma": "^0.13.19"
+  }
+}

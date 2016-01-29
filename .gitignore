@@ -1,2 +1,4 @@
 /app/src/vendors/*
 *.swp
+node_modules/*
+
