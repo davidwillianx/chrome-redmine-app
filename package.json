@@ -22,6 +22,12 @@
   },
   "homepage": "https://github.com/davidwillianx/chrome-redmine-app#readme",
   "devDependencies": {
-    "karma": "^0.13.19"
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "jshint-stylish": "^2.1.0"
+  },
+  "dependencies": {
+    "jshint": "^2.9.1"
   }
 }
