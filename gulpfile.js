@@ -1,16 +1,17 @@
- var gulp =  require('gulp');
- var $ =  require('gulp-load-plugins')({lazy: true});
+ var gulp = require('gulp');
+ var args = require('yargs').argv;
+ var $ = require('gulp-load-plugins')({lazy: true});
 
  var jsPath = [
        './app/src/*.js',
-       './app/src/**/*.js'
+       './app/src/**/*.js' 
  ];
 
 
-
- gulp.task('start', function(){
+ gulp.task('pattern', function(){
     return gulp
-       src(jsPath)
+       .src(jsPath)
+       .pipe($.if(args.verbose, $.print()))
        .pipe($.jscs())
        .pipe($.jshint())
        .pipe($.jshint.reporter('jshint-stylish', { verbose: true }))
@@ -22,9 +23,4 @@
 
 
 
-
-
-
-
  ////////////// aux tools
-
